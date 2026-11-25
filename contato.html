@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Contacto — Luz Lemes Fotografía</title>
+  <meta name="description" content="Escribe a Luz Lemes para consultar disponibilidad y paquetes. Contacto por WhatsApp, e-mail o formulario.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">Luz Lemes</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="projetos.html">Portafolio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="wrap page-head" aria-labelledby="contato-title">
+    <p class="lead">Contacto</p>
+    <h1 id="contato-title">Hablemos de tu sesión</h1>
+  </section>
+
+  <section class="wrap" aria-label="Formas de contacto y formulario">
+    <div class="contact-grid">
+      <div>
+        <ul class="info-list">
+          <li>
+            <span>WhatsApp</span>
+            <a href="https://wa.me/34644947414" rel="noopener">+34 644 947 414</a>
+          </li>
+          <li>
+            <span>Instagram</span>
+            <a href="https://www.instagram.com/luzfotografia.es" rel="noopener">@luzfotografia.es</a>
+          </li>
+        </ul>
+        <p class="lead" style="margin-top:32px">Escribe o envía un mensaje para consultar disponibilidad y paquetes.</p>
+      </div>
+
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="err-nombre">
+          <span class="error" id="err-nombre" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+          <span class="error" id="err-email" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono <span class="form-note">(opcional)</span></label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" aria-describedby="err-telefono">
+          <span class="error" id="err-telefono" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required aria-describedby="err-mensaje"></textarea>
+          <span class="error" id="err-mensaje" aria-live="polite"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year"></span> Luz Lemes Fotografía. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="https://wa.me/34644947414" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/luzfotografia.es" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js" defer></script>
+<script src="js/contato.js" defer></script>
+</body>
+</html>
